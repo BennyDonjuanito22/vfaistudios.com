@@ -1,17 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RemixRelay | Pricing</title>
-  <meta name="description" content="Owned pages, outreach material, and video examples should all show how one source turns into a controlled multi-platform content system." />
-  <meta property="og:title" content="RemixRelay | Pricing" />
-  <meta property="og:description" content="Owned pages, outreach material, and video examples should all show how one source turns into a controlled multi-platform content system." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://vfaistudios.com/" />
+  <title>RemixRelay | Offer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
-  
 </head>
 <body>
   <main class="page">
@@ -20,55 +14,67 @@
         <span class="brand-mark"></span>
         <span class="brand-copy">
           <strong>RemixRelay</strong>
+          <span>Looped remix arrows or stacked signal frames.</span>
         </span>
       </a>
       <nav class="nav">
         <a class='button ghost' href='index.html'>Home</a>
-        <a class='button primary' href='offer.html'>Pricing</a>
-        <a class='button ghost' href='channels.html'>About</a>
+        <a class='button primary' href='offer.html'>Offer</a>
+        <a class='button ghost' href='checkout.html'>Checkout</a>
+        <a class='button ghost' href='channels.html'>Channels</a>
+        <a class='button ghost' href='thank-you.html'>Thank You</a>
       </nav>
     </header>
     
     <section class="hero">
       <article class="hero-card">
-        <div class="eyebrow">Pricing</div>
-        <h1>Simple, transparent pricing.</h1>
-        <p>Choose the plan that fits your needs. Every purchase includes instant digital delivery and dedicated support.</p>
+        <div class="eyebrow">Offer Page System</div>
+        <h1>RemixRelay Offer Architecture</h1>
+        <p>This page shows the designed offer stack, pricing hierarchy, and product or service card rules that should remain aligned across owned and third-party surfaces.</p>
       </article>
       <aside class="hero-card">
-        <h2>What&rsquo;s Included</h2>
-        <ul>
-          <li>Instant digital delivery</li>
-          <li>Dedicated support via <a href="mailto:support@vfaistudios.com">support@vfaistudios.com</a></li>
-          <li>14-day satisfaction guarantee</li>
-        </ul>
+        <h2>Inventory Rules</h2>
+        <ul><li>Cards show source asset input, output count, and posting notes without bloated agency copy.</li><li>Storyboard frames, caption banks, and clip examples share the same red, blue, and gold story system.</li><li>Keep the live domain naming drift resolved visually so the public sees RemixRelay everywhere.</li></ul>
       </aside>
     </section>
     <section class="panel" style="margin-top:24px;">
-      <h2>Choose Your Plan</h2>
+      <h2>Offer Cards</h2>
       <div class="offer-grid" style="margin-top:18px;"><article class='offer-card'><h3>Starter Pack</h3><div class='price'>$499</div><p>Thirty repurposed clips with hooks, captions, and posting notes.</p><ul><li>30 short-form clips from one long-form source</li><li>Captions, hook ideas, and posting notes</li><li>Delivery checklist and reuse notes</li></ul></article><article class='offer-card'><h3>Growth Pack</h3><div class='price'>$1,200</div><p>Expanded monthly remix system for multi-platform distribution.</p><ul><li>80 short-form assets across core channels</li><li>Content bucketing for TikTok, Reels, Shorts, and LinkedIn</li><li>Operator handoff with posting sequence</li></ul></article></div>
     </section>
-    <section class="panel" style="margin-top:24px;">
-      <div class="actions" style="justify-content:center;">
-        <a class="button primary" href="./checkout.html">Proceed to Checkout</a>
-      </div>
-    </section>
     
-    <footer class="site-footer">
-      <div class="footer-note">&copy; 2026 RemixRelay. All rights reserved.</div>
-      <div class="footer-links">
-        <a href="./index.html">Home</a>
-        <a href="./offer.html">Pricing</a>
-        <a href="./channels.html">About</a>
-        <a href='mailto:support@vfaistudios.com'>Contact</a>
-      </div>
-      <div class="footer-links" style="margin-top:8px;">
-        <a href="./privacy.html">Privacy</a>
-        <a href="./terms.html">Terms</a>
-        <a href="./refunds.html">Refunds</a>
-      </div>
-    </footer>
+    <div class="footer-note">Local deployment pack for RemixRelay. No launch without approval.</div>
   </main>
-  
+
+  <!-- ASI Analytics (lightweight, privacy-friendly) -->
+  <script>
+  (function(){
+    var bid = document.body.getAttribute('data-business-id') || 'unknown';
+    var page = location.pathname.split('/').pop() || 'index.html';
+    var key = 'asi_pv_' + bid;
+    try {
+      var data = JSON.parse(localStorage.getItem(key) || '{}');
+      data[page] = (data[page] || 0) + 1;
+      data._total = (data._total || 0) + 1;
+      data._last = new Date().toISOString();
+      data._ref = document.referrer || 'direct';
+      localStorage.setItem(key, JSON.stringify(data));
+    } catch(e) {}
+    // Beacon to analytics endpoint if configured
+    if (window.ASI_ANALYTICS_URL) {
+      var payload = JSON.stringify({
+        business_id: bid,
+        page: page,
+        referrer: document.referrer || 'direct',
+        timestamp: new Date().toISOString(),
+        ua: navigator.userAgent
+      });
+      try {
+        navigator.sendBeacon(window.ASI_ANALYTICS_URL, payload);
+      } catch(e) {
+        // Silent fail — analytics should never break the site
+      }
+    }
+  })();
+  </script>
 </body>
 </html>
