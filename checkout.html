@@ -3,156 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Get Started | RemixRelay</title>
-  <meta name="description" content="Content repurposing and remix services that transform your existing content into multiple formats. One video becomes blog posts, social clips, email sequences, and more.">
-  <meta property="og:title" content="Get Started | RemixRelay">
-  <meta property="og:description" content="Content repurposing and remix services that transform your existing content into multiple formats. One video becomes blog posts, social clips, email sequences, and more.">
+  <title>Get Started Free | RemixRelay</title>
+  <meta name="description" content="Free content remix — turn one piece into 5 formats">
+  <meta property="og:title" content="Get Started Free | RemixRelay">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vfaistudios.com/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Get Started | RemixRelay">
-  <meta name="twitter:description" content="Content repurposing and remix services that transform your existing content into multiple formats. One video becomes blog posts, social clips, email sequences, and more.">
+  <meta property="og:url" content="https://vfaistudios.com/checkout.html">
+  <link rel="canonical" href="https://vfaistudios.com/checkout.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    .lead-container { max-width: 640px; margin: 0 auto; padding: 60px 20px; text-align: center; }
+    .lead-container h1 { font-size: 2.4rem; margin-bottom: 16px; line-height: 1.2; }
+    .lead-container .subtitle { font-size: 1.2rem; color: #555; margin-bottom: 40px; }
+    .lead-form { background: #fff; border: 2px solid #e8e8e8; border-radius: 16px; padding: 40px 32px; text-align: left; }
+    .lead-form label { display: block; font-weight: 600; margin-bottom: 6px; color: #333; }
+    .lead-form input, .lead-form textarea { width: 100%; padding: 12px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; margin-bottom: 16px; font-family: inherit; box-sizing: border-box; }
+    .lead-form input:focus, .lead-form textarea:focus { border-color: #2563eb; outline: none; }
+    .lead-form textarea { min-height: 80px; resize: vertical; }
+    .submit-btn { background: #2563eb; color: #fff; border: none; padding: 16px 32px; border-radius: 8px; font-size: 1.1rem; font-weight: 700; cursor: pointer; width: 100%; transition: background 0.2s; }
+    .submit-btn:hover { background: #1d4ed8; }
+    .success-msg { display: none; background: #dcfce7; border: 2px solid #16a34a; border-radius: 12px; padding: 24px; margin-top: 20px; }
+    .success-msg h3 { color: #16a34a; margin-bottom: 8px; }
+    .value-props { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 40px 0; text-align: center; }
+    .value-prop { padding: 16px; }
+    .value-prop h4 { margin-bottom: 4px; }
+    .value-prop p { color: #666; font-size: 0.9rem; }
+  </style>
 </head>
-<body data-business-id="b12">
-  <header class="site-header">
-    <div class="container">
-      <a href="./index.html" class="logo"><span>R</span>emixRelay</a>
-      <nav class="nav-links">
-    <a href="./index.html">Home</a>
-    <a href="./offer.html">Services</a>
-    <a href="./checkout.html" class="active">Get Started</a>
-      </nav>
-    </div>
-  </header>
-  <section class="hero-section">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">Secure Checkout</div>
-        <h1>Complete Your Purchase</h1>
-        <p>Select a plan below to proceed. All transactions are processed securely through Stripe.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Choose Your Plan</h2>
-      <div class="offers-grid" id="checkout-tiers">
-        <div class="offer-card" data-business="b12" data-tier="0" data-price="14700">
-          <h3>Remix Starter</h3>
-          <div class="offer-price">$147</div>
-          <p>Transform one piece of content into 5 new formats.</p>
-          <ul>
-          <li>1 source piece → 5 remixed assets</li>
-          <li>Blog post adaptation</li>
-          <li>Social media clips/posts</li>
-          <li>Quote graphics</li>
-          <li>5-day delivery</li>
-          </ul>
-          <button class="btn btn-primary buy-btn" data-tier="0" style="width:100%;cursor:pointer;">Buy Now</button>
-        </div>
-        <div class="offer-card featured" data-business="b12" data-tier="1" data-price="34700">
-          <h3>Remix Growth</h3>
-          <div class="offer-price">$347</div>
-          <p>Full content remix package for serious distribution.</p>
-          <ul>
-          <li>3 source pieces → 15 remixed assets</li>
-          <li>Blog posts</li>
-          <li>Social clips &amp; posts</li>
-          <li>Email newsletter adaptation</li>
-          <li>Quote graphics &amp; carousels</li>
-          <li>Caption bank</li>
-          </ul>
-          <button class="btn btn-primary buy-btn" data-tier="1" style="width:100%;cursor:pointer;">Buy Now</button>
-        </div>
-        <div class="offer-card" data-business="b12" data-tier="2" data-price="69700">
-          <h3>Remix Agency</h3>
-          <div class="offer-price">$697</div>
-          <p>High-volume content remix for brands and agencies.</p>
-          <ul>
-          <li>5 source pieces → 30+ remixed assets</li>
-          <li>All Remix Growth formats</li>
-          <li>Thread/carousel scripts</li>
-          <li>Content calendar</li>
-          <li>Monthly strategy call</li>
-          </ul>
-          <button class="btn btn-primary buy-btn" data-tier="2" style="width:100%;cursor:pointer;">Buy Now</button>
-        </div>
-      </div>
-    </div>
-  </section>
+<body>
+  <div class="lead-container">
+    <h1>Free content remix — turn one piece into 5 formats</h1>
+    <p class="subtitle">No credit card required. Get started in under 2 minutes.</p>
 
-  <div id="checkout-status" style="display:none;" class="section">
-    <div class="container">
-      <p id="checkout-message" style="text-align:center;font-weight:600;">Processing...</p>
+    <div class="lead-form">
+      <form id="lead-form" action="https://formsubmit.co/Autopilot.TikTok.12@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Lead from RemixRelay Website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://vfaistudios.com/thank-you.html">
+        <input type="hidden" name="_template" value="box">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="John Smith" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+
+        <label for="message">How can we help?</label>
+        <textarea id="message" name="message" placeholder="Tell us about your needs..."></textarea>
+
+        <button type="submit" class="submit-btn">Get Started Free</button>
+      </form>
+    </div>
+
+    <div class="value-props">
+      <div class="value-prop">
+        <h4>Free</h4>
+        <p>No cost, no obligation</p>
+      </div>
+      <div class="value-prop">
+        <h4>Fast</h4>
+        <p>Response within 24 hours</p>
+      </div>
+      <div class="value-prop">
+        <h4>Expert</h4>
+        <p>AI-powered solutions</p>
+      </div>
     </div>
   </div>
 
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Purchase Information</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Secure Payment</h3>
-          <p>All transactions processed through Stripe (PCI-DSS Level 1 compliant). Your card details never touch our servers.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Instant Access</h3>
-          <p>Digital products are delivered instantly after payment. Service engagements begin within 24 hours.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Satisfaction Guarantee</h3>
-          <p>14-day refund policy on digital products. Contact <a href="mailto:support@vfaistudios.com">support@vfaistudios.com</a> for support.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2026 RemixRelay. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="mailto:support@vfaistudios.com">Contact</a>
-          <a href="./offer.html">Services</a>
-        </div>
-      </div>
-    </div>
-  </footer>
   <script>
   (function(){
-    'use strict';
-    var API_BASE=window.ASI_API_BASE||'';
-    var BUSINESS_ID='b12';
-    var TIERS=[{"name": "Remix Starter", "price_cents": 14700, "price_display": "$147"}, {"name": "Remix Growth", "price_cents": 34700, "price_display": "$347"}, {"name": "Remix Agency", "price_cents": 69700, "price_display": "$697"}];
-    document.querySelectorAll('.buy-btn').forEach(function(btn){
-      btn.addEventListener('click',function(){
-        var tier=parseInt(this.dataset.tier,10);
-        var info=TIERS[tier];
-        if(!info)return;
-        var statusEl=document.getElementById('checkout-status');
-        var msgEl=document.getElementById('checkout-message');
-        statusEl.style.display='block';
-        msgEl.textContent='Redirecting to secure checkout...';
-        if(!API_BASE){msgEl.textContent='Checkout is being configured. Please contact '+'support@vfaistudios.com'+' to complete your purchase.';return;}
-        fetch(API_BASE+'/stripe/create-checkout-session',{
-          method:'POST',headers:{'Content-Type':'application/json'},
-          body:JSON.stringify({business_id:BUSINESS_ID,tier:tier,product_name:info.name,amount:info.price_cents})
-        }).then(function(r){return r.json();}).then(function(d){
-          if(d.url)window.location.href=d.url;else msgEl.textContent=d.error||'Checkout unavailable. Contact support.';
-        }).catch(function(){msgEl.textContent='Checkout unavailable. Please contact support.';});
-      });
-    });
-  })();
-  </script>
-  <script>
-  (function(){
-    var bid='b12',page=location.pathname.split('/').pop()||'index.html';
+    var bid='b12',page='checkout.html';
     var key='asi_pv_'+bid;
-    try{var d=JSON.parse(localStorage.getItem(key)||'{}');d[page]=(d[page]||0)+1;d._total=(d._total||0)+1;d._last=new Date().toISOString();d._ref=document.referrer||'direct';localStorage.setItem(key,JSON.stringify(d));}catch(e){}
-    if(window.ASI_ANALYTICS_URL){try{navigator.sendBeacon(window.ASI_ANALYTICS_URL,JSON.stringify({business_id:bid,page:page,referrer:document.referrer||'direct',timestamp:new Date().toISOString(),ua:navigator.userAgent}));}catch(e){}}
+    var today=new Date().toISOString().slice(0,10);
+    var stored=JSON.parse(localStorage.getItem(key)||'{}');
+    if(stored.date!==today)stored={date:today,views:0};
+    stored.views++;
+    localStorage.setItem(key,JSON.stringify(stored));
   })();
   </script>
 </body>
